@@ -13,6 +13,8 @@ import Testimonials from './Components/Testimonials';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import { useLocation } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const ScrollToTop = () => {
   const location = useLocation();

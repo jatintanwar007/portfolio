@@ -1,135 +1,94 @@
-// src/components/About.js
-import React from 'react';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const About = () => {
   return (
-    <>
-    {/* <section className="portfolio-about portfolio-section portfolio-no-pt portfolio-no-pb" id="about-section">
-      <div className="container">
-        <div className="row d-flex no-gutters">
-          <div className="col-md-6 col-lg-5 d-flex">
-            <div className="img-about img d-flex align-items-stretch">
-              <div className="overlay"></div>
-              <div className="img d-flex align-self-stretch align-items-center" style={{backgroundImage: 'url(/images/about-1.jpg)'}}>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
-            <div className="py-md-5">
-              <div className="row justify-content-start pb-3">
-                <div className="col-md-12 heading-section">
-                  <span className="subheading">My Intro</span>
-                  <h2 className="mb-4" style={{fontSize: '34px', textTransform: 'capitalize'}}>About Me</h2>
-                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    <section
+      className="portfolio-about portfolio-section portfolio-no-pt portfolio-no-pb"
+      id="about-section"
+    >
+      <div className="container d-flex justify-content-center">
+        <div className="col-lg-10 col-md-12 px-3 py-5">
+          <div className="py-md-4">
+            <div className="row justify-content-start pb-3">
+              <div className="col-12 heading-section">
+                <span className="subheading">My Intro</span>
+                <h2
+                  className="mb-4"
+                  style={{ fontSize: "34px", textTransform: "capitalize" }}
+                >
+                  About Me
+                </h2>
 
-                  <ul className="about-info mt-4 px-md-0 px-2">
-                    <li className="d-flex"><span>Name:</span> <span>A</span></li>
-                    <li className="d-flex"><span>Date of birth:</span> <span>January 01, 1990</span></li>
-                    <li className="d-flex"><span>Address:</span> <span>San Francisco CA 97987 USA</span></li>
-                    <li className="d-flex"><span>Zip code:</span> <span>1000</span></li>
-                    <li className="d-flex"><span>Email:</span> <span><a href="mailto:info@example.com">[email&#160;protected]</a></span></li>
-                    <li className="d-flex"><span>Phone: </span> <span>+1-2234-5678-9-0</span></li>
-                  </ul>
-                </div>
-                <div className="col-md-12">
-                  <div className="my-interest d-lg-flex w-100">
-                    <div className="interest-wrap d-flex align-items-center">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="flaticon-listening"></span>
-                      </div>
-                      <div className="text">Music</div>
+                <p className="text-justify">
+                  I'm a passionate and detail-oriented Full-Stack Developer with a strong foundation in both frontend and backend
+                  technologies. I specialize in building modern, responsive web applications using tools like React, Node.js,
+                  Express, and MongoDB. With a deep understanding of UI/UX principles and RESTful API design, I strive to create
+                  seamless, scalable, and performant digital solutions. Whether it's crafting pixel-perfect interfaces or
+                  architecting robust server-side logic, I enjoy turning complex problems into elegant, efficient code. I’m
+                  constantly learning and pushing the boundaries to stay up-to-date with the latest in web development.
+                </p>
+
+                <ul className="about-info mt-4 px-md-0 px-2">
+                  <li className="d-flex justify-content-between">
+                    <span>Name:</span> <span>Jatin Tanwar</span>
+                  </li>
+                  <li className="d-flex justify-content-between">
+                    <span>Address:</span> <span>India</span>
+                  </li>
+                  <li className="d-flex justify-content-between">
+                    <span>Email:</span>
+                    <span>
+                      <a
+                        href="mailto:jatintanwar1301@gmail.com"
+                        className="text-decoration-none"
+                      >
+                        Mail ME
+                      </a>
+                    </span>
+                  </li>
+                </ul>
+
+                {/* Interests */}
+                <div className="my-interest d-flex flex-wrap justify-content-center mt-5">
+                  <div className="interest-wrap d-flex align-items-center m-2">
+                    <div className="icon d-flex align-items-center justify-content-center me-2">
+                      <span className="flaticon-listening"></span>
                     </div>
-                    <div className="interest-wrap d-flex align-items-center">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="flaticon-suitcases"></span>
-                      </div>
-                      <div className="text">Travel</div>
+                    <div className="text">Music</div>
+                  </div>
+                  <div className="interest-wrap d-flex align-items-center m-2">
+                    <div className="icon d-flex align-items-center justify-content-center me-2">
+                      <span className="flaticon-suitcases"></span>
                     </div>
-                    <div className="interest-wrap d-flex align-items-center">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="flaticon-video-player"></span>
-                      </div>
-                      <div className="text">Movie</div>
+                    <div className="text">Travel</div>
+                  </div>
+                  <div className="interest-wrap d-flex align-items-center m-2">
+                    <div className="icon d-flex align-items-center justify-content-center me-2">
+                      <span className="flaticon-video-player"></span>
                     </div>
-                    <div className="interest-wrap d-flex align-items-center">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="flaticon-football"></span>
-                      </div>
-                      <div className="text">Sports</div>
+                    <div className="text">Movie</div>
+                  </div>
+                  <div className="interest-wrap d-flex align-items-center m-2">
+                    <div className="icon d-flex align-items-center justify-content-center me-2">
+                      <span className="flaticon-football"></span>
                     </div>
+                    <div className="text">PC Games</div>
+                  </div>
+                  <div className="interest-wrap d-flex align-items-center m-2">
+                    <div className="icon d-flex align-items-center justify-content-center me-2">
+                      <span className="flaticon-football"></span>
+                    </div>
+                    <div className="text">Mobile Games</div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> */}
 
-    <section className="portfolio-about portfolio-section portfolio-no-pt portfolio-no-pb" id="about-section">
-      <div className="container">
-        <div className="row d-flex no-gutters">
-          
-          <div className="col-md-6 col-lg-7 pl-md-4 pl-lg-5 py-5">
-            <div className="py-md-5">
-              <div className="row justify-content-start pb-3">
-                <div className="col-md-12 heading-section">
-                  <span className="subheading">My Intro</span>
-                  <h2 className="mb-4" style={{fontSize: '34px', textTransform: 'capitalize'}}>About Me</h2>
-                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-
-                  <ul className="about-info mt-4 px-md-0 px-2">
-                    <li className="d-flex"><span>Name:</span> <span>Jatin Tanwar</span></li>
-                    {/* <li className="d-flex"><span>Date of birth:</span> <span>January 01, 1990</span></li> */}
-                    <li className="d-flex"><span>Address:</span> <span>India</span></li>
-                    {/* <li className="d-flex"><span>Zip code:</span> <span>1000</span></li> */}
-                    <li className="d-flex"><span>Email:</span> <span><a href="mailto:jatintanwar1301@gmail.com">Mail ME</a></span></li>
-                    {/* <li className="d-flex"><span>Phone: </span> <span>+1-2234-5678-9-0</span></li> */}
-                  </ul>
-                </div>
-                <div className="col-md-12">
-                  <div className="my-interest d-lg-flex w-100">
-                    <div className="interest-wrap d-flex align-items-center">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="flaticon-listening"></span>
-                      </div>
-                      <div className="text">Music</div>
-                    </div>
-                    <div className="interest-wrap d-flex align-items-center">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="flaticon-suitcases"></span>
-                      </div>
-                      <div className="text">Travel</div>
-                    </div>
-                    <div className="interest-wrap d-flex align-items-center">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="flaticon-video-player"></span>
-                      </div>
-                      <div className="text">Movie</div>
-                    </div>
-                    <div className="interest-wrap d-flex align-items-center">
-                      <div className="icon d-flex align-items-center justify-content-center">
-                        <span className="flaticon-football"></span>
-                      </div>
-                      <div className="text">Sports</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-6 col-lg-5 d-flex">
-            <div className="img-about img d-flex align-items-stretch">
-              <div className="overlay"></div>
-              <div className="img d-flex align-self-stretch align-items-center" style={{backgroundImage: 'url(/images/about-1.jpg)'}}>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    </>
   );
 };
 

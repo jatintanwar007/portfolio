@@ -2,6 +2,9 @@ import React from "react";
 import { FaTwitter, FaLinkedinIn, FaGithub, FaDribbble } from "react-icons/fa";
 
 const Hero = () => {
+  // Define the path to your PDF file in the public folder
+  const cvPath = "/document/JatinResume.pdf"; //
+
   return (
     <section className="hero-container">
       <div className="hero-content">
@@ -14,20 +17,29 @@ const Hero = () => {
             I break down complex user experience problems to create integrity
             focused solutions that connect billions of people.
           </p>
-          <div className="hero-buttons">
-            <a href="#" className="btn-download">
-              Download CV <span>⬇</span>
+          <div className="hero-buttons d-inline-block">
+            {/* Updated CV button with download functionality */}
+            <a 
+              href={cvPath} 
+              className="btn-download"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View CV
+            </a>
+            
+            <a href="#contact-section" className="btn-download m-3">
+              Hire Me
             </a>
             <div className="hero-socials">
-              <a href="#"><FaTwitter /></a>
-              <a href="#"><FaLinkedinIn /></a>
-              <a href="#"><FaGithub /></a>
+              <a href="https://shorturl.at/4OnAP" rel="noopener noreferrer"><FaLinkedinIn /></a>
+              <a href="https://shorturl.at/4RjOq"><FaGithub /></a>
             </div>
           </div>
         </div>
         <div className="hero-image">
           <img
-            src="/images/profile.png" // 👉 Replace with actual image path or import
+            src="/images/profile-blur1.png"
             alt="Developer"
           />
         </div>
