@@ -74,6 +74,7 @@ html,body{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .hero-content {
@@ -1270,8 +1271,8 @@ fieldset:disabled a.btn {
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
-    padding-right: 0;
-    padding-left: 0; } }
+    padding-right: 10;
+    padding-left: 10; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
